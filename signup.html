@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/singnup-mobile.css" media="screen and (min-width:480px) and (max-width:760px)">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- logo -->
+            <section class="w-100 d-flex justify-content-center pt-3">
+                <a href="#">
+                    <img class="logo-photo" src="images/amazon_PNG24.png" alt="">
+                </a>
+            </section>
+
+            <!-- content for sign up -->
+            <section class="d-flex  content-sec mt-5">
+                <div class="d-flex justify-content-center flex-column">
+                    <p class="h2">Create Account</p>
+                    <label class="h6" for="name-input">Your name</label>
+                    <input class="inpt" type="text" name="name-input" id="name-input">
+
+                    <label class="h6" for="mobile-input">Mobile number</label>
+                    <div class="w-100 d-flex  justify-content-between">
+                        <select class="mobile-regon d-flex justify-content-between regon-select">
+                            <option value="">
+                                <div class="align-self-center me-1 w-50 ps-1">
+                                    <img src="images/Flag_of_Egypt.png" class="regon-icon" alt="regin-icon">
+                                </div>
+                                <p class="align-self-center mt-3">
+                                    +20</p>
+                                <div class="up-and-down d-flex flex-column ps-3 align-self-center">
+                                    <i class="fa-solid fa-angle-up"></i>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </option>
+                        </select>
+
+                        <input class="w-100 ms-2 inpt" type="text" name="name-input" id="name-input">
+                    </div>
+
+                    <div>
+                        <a href="#">Use your email instead</a>
+                    </div>
+
+
+                    <div class="d-flex justify-content-center flex-column">
+                        <label class="h6" for="name-input">Password</label>
+                        <input class="inpt" type="password" name="password-input" id="password-input">
+                    </div>
+                    <div class="d-flex pt-1 small-text">
+                        <i class="fa-solid fa-info text-primary mt-1"></i>
+                        <p class="ms-2">Passwords must be at least 6 characters.</p>
+                    </div>
+
+                    <div>
+                        <p>By enrolling a mobile phone number, you consent to receiving automated security notifications
+                            via text message from Amazon. You can opt out by removing your mobile number on the Login &
+                            Security page located in Your Account settings. Message and data rates may apply.</p>
+                    </div>
+                    <div>
+                        <p>We will send you a text to verify your phone.
+                            Message and Data rates may apply.</p>
+                    </div>
+                    <div class="btn">
+                        <input class="singup-btn" type="submit" value="continue">
+                    </div>
+                    <div class="line-div align-self-center"></div>
+                    <div>
+                        <p>
+                            Already have an account?
+                            <a href="signup.html">Sign in</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- footer -->
+            <footer class="d-flex justify-content-center flex-column small-text">
+                <div class="line-div align-self-center mt-3 mb-3"></div>
+                <div class="d-flex justify-content-center mb-3">
+                    <a href="" class="pe-3"> Conditions of Use</a>
+                    <a href="" class="pe-5">Privacy Notice</a>
+                    <a href="">Help</a>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p> &copy; 1996–2022, Amazon.com, Inc. or its affiliates</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/8a31f616a6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+  <title>Document</title>
+</head>
+
+<body style="background-color:#EAEDED">
+
+  <!-- ------------------------------------------------First Navbar -----------------------------------------  -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white firstnav">
+    <div class="container-fluid ">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="me-3" id="icon">
+        <a href="index.html">
+          <img src="images/amazon-icon1.png" alt="">
+        </a>
+
+      </div>
+
+      <div class=" me-3">
+        <!-- <i class="fas fa-globe-asia me-2 mt-3"></i> -->
+        <!-- <img src="images/map-pin-icon.png " alt=""> -->
+
+        <svg class="me-2 mt-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-geo-alt" viewBox="0 0 16 16">
+          <path
+            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+        </svg>
+        <div id="deliver">
+          <p>Deliver to</p>
+          <span>Egypt</span>
+        </div>
+      </div>
+
+
+
+
+      <div class="collapse navbar-collapse signin ms-2" id="navbarSupportedContent">
+
+        <form class="d-flex">
+          <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit"> <img src="images/searching.png" alt=""> </button>
+        </form>
+
+        <div class="collapse navbar-collapse countries ms-2" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="images/egyptflag.png" alt="">
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#"><img src="images/egyptflag.png" alt=""></a></li>
+                <li><a class="dropdown-item" href="#"><img src="images/britishFlag.png" alt=""></a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+
+
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <div id="sign">Hello, <span>Sign in</span></div>
+              <span id="navbarbold">Account & Lists</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Sign in</a></li>
+              <li><a class="dropdown-item" href="signup.html">Sign up</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Wish List</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="me-5">
+          <div id="return">Returns</div>
+          <div id="navbarbold">& Orders</div>
+        </div>
+
+
+        <div>
+          <span> <img src="images/cart.png" alt=""> </span> <span class="mt-2">Cart</span>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </nav>
+  <!-- -------------------------------------------End First Navbar--------------------------------------------  -->
+
+  <!-- -------------------------------------------Start Second Navbar--------------------------------------------  -->
+
+  <div id="secnav" class="container-fluid">
+
+    <ul>
+      <li class="open">
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()"> <i class="fa-solid fa-align-justify fsize"></i> All</span>
+
+        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      </li>
+      <li class="fsize">
+        <a class="text-white" href="#">Today's Deals <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="fsize">
+        <a class="text-white" href="#">Customer Service</a>
+      </li>
+      <li class="fsize">
+        <a class="text-white" href="#">Registry</a>
+      </li>
+      <li class="fsize">
+        <a class="text-white" href="#">Gift Cards</a>
+      </li>
+      <li class="fsize">
+        <a class="text-white" href="#">Sell</a>
+      </li>
+    </ul>
+
+  </div>
+
+
+  <!-- ------------------------------------ End Second Navbar----------------------------------------  -->
+
+
+
+  <!-- ----------------------------------------Start Slider----------------------------------------  -->
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/slider1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/slider2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/slider3.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/slider4.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- ---------------------------------------- End  Slider----------------------------------------  -->
+
+
+  <!-- ---------------------------------------- Start Second Section ----------------------------------------  -->
+
+  <div class="container-fluid secondsec ">
+
+    <div class="row mb-5">
+
+      <div class="col-lg-3 col-md-6 col-sm-12 ">
+
+        <div class="row categories" style="margin:5px 2px;">
+          <span class="game mt-4 mb-4">Gaming accessories</span>
+          <div class="col-5 ms-3">
+            <img class="img-fluid" src="images/Headsets.jpg" alt="">
+            <p>Headsets</p>
+          </div>
+          <div class="col-5">
+            <img class="img-fluid" src="images/Keyboard.jpg" alt="">
+            <p>Keyboard</p>
+          </div>
+
+          <div class="col-5 ms-3">
+            <img class="img-fluid" src="images/mouse.jpg" alt="">
+            <p>Computer mice</p>
+          </div>
+          <div class="col-5">
+            <img class="img-fluid" src="images/chairs.jpg" alt="">
+            <p>Chairs</p>
+          </div>
+          <a class="pt-4 pb-4" href="">See more</a>
+
+        </div>
+
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="row categories" style="margin:5px 2px;">
+          <span class="game mt-4 mb-4">Shop by Category</span>
+          <div class="col-5 ms-3">
+            <img class="img-fluid" src="images/laptop.jpg" alt="">
+            <p>Computer and accessories</p>
+          </div>
+          <div class="col-5">
+            <img class="img-fluid" src="images/playstation.jpg" alt="">
+            <p>Video Games</p>
+          </div>
+          <div class="col-5 ms-3">
+            <img class="img-fluid" src="images/baby.jpg" alt="">
+            <p>Baby</p>
+          </div>
+          <div class="col-5">
+            <img class="img-fluid" src="images/toy.jpg" alt="">
+            <p>Toy & Games</p>
+          </div>
+          <a class="pt-3 pb-3" href="">Shop now</a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="row categories health " style="margin:5px 2px;">
+          <span class="game mt-4 mb-4">Health & Personal Care</span>
+          <img class="img-fluid" src="images/healthandpersonalcare.jpg" alt="">
+          <a class="pt-3 pb-3" href="">Shop now</a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 ship">
+
+        <div class="categories text-center  mb-3 pb-3 pt-3">
+          <p>Sign in for the best experience</p>
+          <button class="px-5 py-2">Sign in Securely</button>
+        </div>
+
+        <div class="text-center">
+          <img class="img-fluid" src="images/ship.jpg" alt="">
+        </div>
+
+      </div>
+
+
+
+
+      <div class="row mt-5 ">
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="row categories amazonbasic" style="margin:5px 2px;">
+            <span class="game mt-4 mb-4">AmazonBasics</span>
+            <img class="" src="images/amazonbasics.jpg" alt="">
+            <a class="pt-3 pb-3" href="">See more</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="row categories health" style="margin:5px 2px;">
+            <span class="game mt-4 mb-4">Beauty picks</span>
+            <img class="" src="images/beauty.jpg" alt="">
+            <a class="pt-3 pb-3" href="">Shop now</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="row categories health" style="margin:5px 2px;">
+            <span class="game mt-4 mb-4">Deal of the Day</span>
+            <img class="" src="images/healthandpersonalcare.jpg" alt="">
+            <a class="pt-3 pb-3" href="">See All deals</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 ">
+          <div class="row categories health electronics" style="max-width:100%; margin-left: 4px; margin-top:2px">
+            <span class="game mt-4 mb-4">Electronics</span>
+            <img class="" src="images/electronics.jpg" alt="">
+            <a class="pt-3 pb-3" href="">See more</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ---------------------------------------- End  Second Section----------------------------------------  -->
+
+
+      <!-- ---------------------------------------- Start  Product slider ----------------------------------------  -->
+
+      <main>
+        <div class="text">
+          <h1>Some Products</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam non atque adipisci est, recusandae aperiam,
+            ullam minima quos nostrum animi voluptas sequi. At repellendus fuga reiciendis accusantium, dolor suscipit
+            repellat?
+          </p>
+        </div>
+        <header>
+          <h1>Top Products</h1>
+          <p>
+            <span class="sp">&#139;</span>
+            <span class="sp">&#155;</span>
+          </p>
+        </header>
+        <section>
+          <div class="product">
+            <picture>
+              <img src="image/banner2.png" alt="">
+            </picture>
+            <div class="detail">
+              <p>
+                <b>Product One</b><br>
+                <small>New arrival</small>
+              </p>
+              <samp>$45.00</samp>
+            </div>
+            <div class="button">
+              <a href="#">Add-cart</a>
+            </div>
+          </div>
+          <div class="product">
+            <picture>
+              <img src="image/banner1.png" alt="">
+            </picture>
+            <div class="detail">
+              <p>
+                <b>Product Two</b><br>
+                <small>New arrival</small>
+              </p>
+              <samp>$45.00</samp>
+            </div>
+            <div class="button">
+              <a href="#">Add-cart</a>
+            </div>
+          </div>
+          <div class="product">
+            <picture>
+              <img src="image/banner3.png" alt="">
+            </picture>
+            <div class="detail">
+              <p>
+                <b>Product Three</b><br>
+                <small>New arrival</small>
+              </p>
+              <samp>$45.00</samp>
+            </div>
+            <div class="button">
+              <a href="#">Add-cart</a>
+            </div>
+          </div>
+          <div class="product">
+            <picture>
+              <img src="image/banner4.png" alt="">
+            </picture>
+            <div class="detail">
+              <p>
+                <b>Product Four</b><br>
+                <small>New arrival</small>
+              </p>
+              <samp>$45.00</samp>
+            </div>
+            <div class="button">
+              <a href="#">Add-cart</a>
+            </div>
+          </div>
+          <div class="product">
+            <picture>
+              <img src="image/watch.png" alt="">
+            </picture>
+            <div class="detail">
+              <p>
+                <b>Product Five</b><br>
+                <small>New arrival</small>
+              </p>
+              <samp>$45.00</samp>
+            </div>
+            <div class="button">
+              <a href="#">Add-cart</a>
+            </div>
+          </div>
+          <div class="product">
+            <picture>
+              <img src="image/delta.png" alt="">
+            </picture>
+            <div class="detail">
+              <p>
+                <b>Product Six</b><br>
+                <small>New arrival</small>
+              </p>
+              <samp>$45.00</samp>
+            </div>
+            <div class="button">
+              <a href="#">Add-cart</a>
+            </div>
+          </div>
+          <div class="product">
+            <picture>
+              <img src="image/image3.png" alt="">
+            </picture>
+            <div class="detail">
+              <p>
+                <b>Product Seven</b><br>
+                <small>New arrival</small>
+              </p>
+              <samp>$45.00</samp>
+            </div>
+            <div class="button">
+              <a href="#">Add-cart</a>
+            </div>
+          </div>
+          <div class="product">
+            <picture>
+              <img src="image/image2.png" alt="">
+            </picture>
+            <div class="detail">
+              <p>
+                <b>Product Eight</b><br>
+                <small>New arrival</small>
+              </p>
+              <samp>$45.00</samp>
+            </div>
+            <div class="button">
+              <a href="#">Add-cart</a>
+            </div>
+          </div>
+          <div class="product">
+            <picture>
+              <img src="image/nokia.png" alt="">
+            </picture>
+            <div class="detail">
+              <p>
+                <b>Product Nine</b><br>
+                <small>New arrival</small>
+              </p>
+              <samp>$45.00</samp>
+            </div>
+            <div class="button">
+              <a href="#">Add-cart</a>
+            </div>
+          </div>
+          <div class="product">
+            <picture>
+              <img src="image/nokia-air.png" alt="">
+            </picture>
+            <div class="detail">
+              <p>
+                <b>Product Ten</b><br>
+                <small>New arrival</small>
+              </p>
+              <samp>$45.00</samp>
+            </div>
+            <div class="button">
+              <a href="#">Add-cart</a>
+            </div>
+          </div>
+          <div class="product">
+            <picture>
+              <img src="image/feature_3.png" alt="">
+            </picture>
+            <div class="detail">
+              <p>
+                <b>Product Eleven</b><br>
+                <small>New arrival</small>
+              </p>
+              <samp>$45.00</samp>
+            </div>
+            <div class="button">
+              <a href="#">Add-cart</a>
+            </div>
+          </div>
+          <div class="product">
+            <picture>
+              <img src="image/one.png" alt="">
+            </picture>
+            <div class="detail">
+              <p>
+                <b>Product Twelve</b><br>
+                <small>New arrival</small>
+              </p>
+              <samp>$45.00</samp>
+            </div>
+            <div class="button">
+              <a href="#">Add-cart</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+
+      <!-- ---------------------------------------- End  Product slider ----------------------------------------  -->
+
+      <!-- ----------------------------------------Start Footer----------------------------------------  -->
+
+      <footer>
+        <div class="top text-center">
+          <a href="#top">Back to top</a>
+        </div>
+
+        <div class="middle">
+          <div class="center">
+            <ul>
+              <li>
+                <h3>Get to Know Us</h3>
+              </li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About Amazon</a></li>
+              <li><a href="#">Investor Relations</a></li>
+              <li><a href="#">Amazon Devices</a></li>
+            </ul>
+            <ul>
+              <li>
+                <h3>Make Money with Us</h3>
+              </li>
+              <li><a href="#">Sell on Amazon</a></li>
+              <li><a href="#">Sell Your Services on Amazon</a></li>
+              <li><a href="#">Sell on Amazon Business</a></li>
+              <li><a href="#">Sell Your Apps on Amazon</a></li>
+              <li><a href="#">Become an Affiliate</a></li>
+              <li><a href="#">Advertise Your Products</a></li>
+              <li><a href="#">Self-Publish with Us</a></li>
+              <li><a href="#">Become an Amazon Vendor</a></li>
+              <li><a href="#">Sell Your Subscription on Amazon</a></li>
+              <li><a href="#">› See all</a></li>
+            </ul>
+            <ul>
+              <li>
+                <h3>Amazon Payment Products</h3>
+              </li>
+              <li><a href="#">Amazon Rewards Visa Signature Cards</a></li>
+              <li><a href="#">Amazon.com Store Card</a></li>
+              <li><a href="#">Amazon.com Corporate Credit Line</a></li>
+              <li><a href="#">Shop with Points</a></li>
+              <li><a href="#">Credit Card Marketplace</a></li>
+              <li><a href="#">Reload Your Balance</a></li>
+              <li><a href="#">Amazon Currency Converter</a></li>
+            </ul>
+            <ul>
+              <li>
+                <h3>Let Us Help You</h3>
+              </li>
+              <li><a href="#">Your Account</a></li>
+              <li><a href="#">Your Orders</a></li>
+              <li><a href="#">Shipping Rates &amp; Policies</a></li>
+              <li><a href="#">Amazon Prime</a></li>
+              <li><a href="#">Returns &amp; Replacements</a></li>
+              <li><a href="#">Manage Your Content and Devices</a></li>
+              <li><a href="#">Amazon Assistant</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+
+          <ul class="copy text-center">
+
+            <li><a href="#" class="select"><i class="fa fa-globe lang" aria-hidden="true"></i> English</a></li>
+            <li><a href="#" class="select"><i class="flag-icon-us flag"></i>United States</a></li>
+          </ul>
+        </div>
+
+        <div class="bottom">
+          <div class="center">
+            <ul>
+              <li><a href="#">Amazon Music<br /><span>Stream millions<br> of songs</span></a></li>
+              <li><a href="#">AmazonFresh<br /><span>Groceries &amp; More<br> Right To Your Door</span></a></li>
+              <li><a href="#">Amazon Web Services<br /><span>Scalable Cloud<br> Computing Services</span></a></li>
+              <li><a href="#">East Dane<br /><span>Designer Men's<br> Fashion</span></a></li>
+              <li><a href="#">Prime Now<br /><span>FREE 2-Hour Delivery<br> on Everyday Items</span></a></li>
+            </ul>
+
+            <ul>
+              <li><a href="#">Amazon Drive<br /><span>Cloud storage<br> from Amazon</span></a></li>
+              <li><a href="#">AmazonGlobal<br /><span>Ship Orders<br> Internationally</span></a></li>
+              <li><a href="#">Audible<br /><span>Download<br> Audio Books</span></a></li>
+              <li><a href="#">Fabric<br /><span>Sewing, Quilting<br> &amp; Knitting</span></a></li>
+              <li><a href="#">Prime Photos<br /><span>Unlimited Photo Storage<br> Free With Prime</span></a></li>
+              <li><a href="#">Woot!<br /><span>Deals and <br> Shenanigans</span></a></li>
+            </ul>
+
+            <ul>
+              <li><a href="#">6pm<br /><span>Score deals<br> on fashion brands</span></a></li>
+              <li><a href="#">Home Services<br /><span>Handpicked Pros<br> Happiness Guarantee</span></a></li>
+              <li><a href="#">Book Depository<br /><span>Books With Free<br> Delivery Worldwide</span></a></li>
+              <li><a href="#">Goodreads<br /><span>Book reviews<br> &amp; recommendations</span></a></li>
+              <li><a href="#">Shopbop<br /><span>Designer<br> Fashion Brands</span></a></li>
+              <li><a href="#">Zappos<br /><span>Shoes &amp;<br> Clothing</span></a></li>
+            </ul>
+
+            <ul>
+              <li><a href="#">AbeBooks<br /><span>Books, art<br> &amp; collectibles</span></a></li>
+              <li><a href="#">Amazon Inspire<br /><span>Free Digital Educational<br> Resources</span></a></li>
+              <li><a href="#">Box Office Mojo<br /><span>Find Movie<br> Box Office Data</span></a></li>
+              <li><a href="#">IMDb<br /><span>Movies, TV<br> &amp; Celebrities</span></a></li>
+              <li><a href="#">TenMarks.com<br /><span>Math Activities<br> for Kids &amp; Schools</span></a></li>
+              <li><a href="#">Souq.com<br /><span>Shop Online in<br> the Middle East</span></a></li>
+            </ul>
+
+            <ul>
+              <li><a href="#">ACX <br /><span>Audiobook Publishing<br> Made Easy</span></a></li>
+              <li><a href="#">Amazon Rapids<br /><span>Fun stories for<br> kids on the go</span></a></li>
+              <li><a href="#">ComiXology<br /><span>Thousands of<br> Digital Comics</span></a></li>
+              <li><a href="#">IMDbPro<br /><span>Get Info Entertainment<br> Professionals Need</span></a></li>
+              <li><a href="#">Warehouse Deals<br /><span>Open-Box<br> Discounts</span></a></li>
+              <li><a href="#">Subscribe with Amazon<br /><span>Discover &amp; try<br> subscription
+                    services</span></a></li>
+            </ul>
+
+            <ul>
+              <li><a href="#">Alexa<br /><span>Actionable Analytics<br> for the Web</span></a></li>
+              <li><a href="#">Amazon Restaurants<br /><span>Food delivery from<br> local restaurants</span></a>
+              </li>
+              <li><a href="#">CreateSpace<br /><span>Indie Print Publishing<br> Made Easy</span></a></li>
+              <li><a href="#">Junglee.com<br /><span>Shop Online<br> in India</span></a></li>
+              <li><a href="#">Whispercast<br /><span>Discover &amp; Distribute<br> Digital Content</span></a></li>
+            </ul>
+
+            <ul>
+              <li><a href="#">Amazon Business<br /><span>Everything For<br> Your Business</span></a></li>
+              <li><a href="#">Amazon Video Direct<br /><span>Video Distribution<br> Made Easy</span></a></li>
+              <li><a href="#">DPReview<br /><span>Digital<br> Photography</span></a></li>
+              <li><a href="#">Kindle Direct Publishing<br /><span>Indie Digital Publishing<br> Made
+                    Easy</span></a></li>
+              <li><a href="#">Withoutabox<br /><span>Submit to<br> Film Festivals</span></a></li>
+            </ul>
+
+            <ul class="copy text-center">
+              <li><a href="#">Conditions of Use</a></li>
+              <li><a href="#">Privacy Notice</a></li>
+              <li><a href="#">Interest-Based Ads</a></li>
+              <li>&copy; 1996-2017, Amazon.com, Inc. or its affiliates</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://kit.fontawesome.com/a5242888ea.js" crossorigin="anonymous"></script>
+
+      <script src="main.js"></script>
+
+</body>
+
+</html>
